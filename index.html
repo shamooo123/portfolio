@@ -1,231 +1,198 @@
-"use client";
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hishaam Ali Abbasi | Robotics Engineer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom scrollbar for a premium feel */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #0f172a; }
+        ::-webkit-scrollbar-thumb { background: #334155; border-radius: 4px; }
+        html { scroll-behavior: smooth; }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-200 font-sans selection:bg-blue-500 selection:text-white">
 
-import React from 'react';
-import { motion } from 'framer-motion';
-import { Github, Linkedin, Mail, FileText, ChevronRight, Terminal, Cpu, PenTool } from 'lucide-react';
+    <div class="fixed inset-0 z-0 opacity-20 pointer-events-none" 
+         style="background-image: radial-gradient(#3b82f6 1px, transparent 1px); background-size: 40px 40px;">
+    </div>
 
-export default function Portfolio() {
-  return (
-    <div className="min-h-screen bg-slate-950 text-slate-200 selection:bg-blue-500 selection:text-white font-sans">
-      
-      {/* BACKGROUND GRID EFFECT */}
-      <div className="fixed inset-0 z-0 opacity-20 pointer-events-none" 
-           style={{ backgroundImage: 'radial-gradient(#3b82f6 1px, transparent 1px)', backgroundSize: '40px 40px' }}>
-      </div>
-
-      {/* NAVBAR */}
-      <nav className="fixed top-0 w-full z-50 bg-slate-950/80 backdrop-blur-md border-b border-white/10">
-        <div className="max-w-5xl mx-auto px-6 h-16 flex items-center justify-between">
-          <div className="text-xl font-bold bg-gradient-to-r from-blue-400 to-cyan-300 bg-clip-text text-transparent">
-            H.A. Abbasi
-          </div>
-          <div className="flex gap-6 text-sm font-medium text-slate-400">
-            <a href="#projects" className="hover:text-blue-400 transition-colors">Projects</a>
-            <a href="#experience" className="hover:text-blue-400 transition-colors">Experience</a>
-            <a href="#contact" className="hover:text-blue-400 transition-colors">Contact</a>
-          </div>
+    <nav class="fixed top-0 w-full z-50 bg-slate-950/80 backdrop-blur-md border-b border-white/10">
+        <div class="max-w-5xl mx-auto px-6 h-16 flex items-center justify-between">
+            <div class="text-xl font-bold bg-gradient-to-r from-blue-400 to-cyan-300 bg-clip-text text-transparent">
+                H.A. Abbasi
+            </div>
+            <div class="flex gap-6 text-sm font-medium text-slate-400">
+                <a href="#projects" class="hover:text-blue-400 transition-colors">Projects</a>
+                <a href="#experience" class="hover:text-blue-400 transition-colors">Experience</a>
+                <a href="mailto:hishaamabbasi@gmail.com" class="hover:text-blue-400 transition-colors">Contact</a>
+            </div>
         </div>
-      </nav>
+    </nav>
 
-      {/* HERO SECTION */}
-      <header className="relative z-10 pt-32 pb-20 px-6 max-w-5xl mx-auto">
-        <motion.div 
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-        >
-          <div className="inline-block px-3 py-1 mb-4 text-xs font-semibold tracking-wider text-blue-400 uppercase bg-blue-500/10 rounded-full border border-blue-500/20">
-            Robotics Engineering Undergrad
-          </div>
-          <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-white mb-6">
-            Bridging the gap between <br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-cyan-400">
-              Physical Systems
-            </span> & AI.
-          </h1>
-          <p className="text-xl text-slate-400 max-w-2xl leading-relaxed mb-8">
-            I am a Robotics Engineer aiming to master the intersection of hardware and machine learning. 
-            From bomb disposal robots to haptic medical trainers, I build systems that interact with the real world.
-          </p>
-          
-          <div className="flex gap-4">
-            <a href="#contact" className="px-6 py-3 bg-blue-600 hover:bg-blue-500 text-white font-medium rounded-lg transition-all flex items-center gap-2">
-              Get in Touch <ChevronRight size={18} />
-            </a>
-            <a href="https://linkedin.com/in/hishaam-ali-abbasi" target="_blank" className="px-6 py-3 bg-white/5 hover:bg-white/10 border border-white/10 text-white font-medium rounded-lg transition-all flex items-center gap-2">
-              <Linkedin size={18} /> LinkedIn
-            </a>
-          </div>
-        </motion.div>
-      </header>
-
-      {/* SKILLS TICKER */}
-      <div className="w-full bg-white/5 border-y border-white/5 py-8 overflow-hidden">
-        <div className="max-w-5xl mx-auto px-6 flex flex-wrap gap-8 justify-center text-slate-400 font-mono text-sm">
-          <span className="flex items-center gap-2"><Terminal size={16} className="text-blue-400"/> Python (PyTorch)</span>
-          <span className="flex items-center gap-2"><Cpu size={16} className="text-blue-400"/> C++ / Embedded</span>
-          <span className="flex items-center gap-2"><PenTool size={16} className="text-blue-400"/> SolidWorks / Creo</span>
-          <span className="flex items-center gap-2"><Terminal size={16} className="text-blue-400"/> ROS</span>
-          <span className="flex items-center gap-2"><Cpu size={16} className="text-blue-400"/> MATLAB</span>
+    <header class="relative z-10 pt-32 pb-20 px-6 max-w-5xl mx-auto">
+        <div class="animate-fade-in-up">
+            <div class="inline-block px-3 py-1 mb-4 text-xs font-semibold tracking-wider text-blue-400 uppercase bg-blue-500/10 rounded-full border border-blue-500/20">
+                Robotics Engineering Undergrad
+            </div>
+            <h1 class="text-5xl md:text-7xl font-bold tracking-tight text-white mb-6">
+                Bridging the gap between <br />
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-cyan-400">
+                    Physical Systems
+                </span> & AI.
+            </h1>
+            <p class="text-xl text-slate-400 max-w-2xl leading-relaxed mb-8">
+                I am a Robotics Engineer aiming to master the intersection of hardware and machine learning. 
+                From bomb disposal robots to haptic medical trainers, I build systems that interact with the real world.
+            </p>
+            
+            <div class="flex gap-4">
+                <a href="mailto:hishaamabbasi@gmail.com" class="px-6 py-3 bg-blue-600 hover:bg-blue-500 text-white font-medium rounded-lg transition-all flex items-center gap-2">
+                    Get in Touch <span>&rarr;</span>
+                </a>
+                <a href="https://linkedin.com/in/hishaam-ali-abbasi" target="_blank" class="px-6 py-3 bg-white/5 hover:bg-white/10 border border-white/10 text-white font-medium rounded-lg transition-all flex items-center gap-2">
+                    LinkedIn
+                </a>
+            </div>
         </div>
-      </div>
+    </header>
 
-      {/* PROJECTS GRID (BENTO STYLE) */}
-      <section id="projects" className="py-24 px-6 max-w-5xl mx-auto">
-        <h2 className="text-3xl font-bold text-white mb-12">Selected Engineering Portfolio</h2>
+    <div class="w-full bg-white/5 border-y border-white/5 py-8 overflow-hidden relative z-10">
+        <div class="max-w-5xl mx-auto px-6 flex flex-wrap gap-8 justify-center text-slate-400 font-mono text-sm">
+            <span class="flex items-center gap-2"><span class="text-blue-400">&gt;_</span> Python (PyTorch)</span>
+            <span class="flex items-center gap-2"><span class="text-blue-400">#</span> C++ / Embedded</span>
+            <span class="flex items-center gap-2"><span class="text-blue-400">⚙</span> SolidWorks / Creo</span>
+            <span class="flex items-center gap-2"><span class="text-blue-400">&gt;_</span> ROS</span>
+            <span class="flex items-center gap-2"><span class="text-blue-400">∫</span> MATLAB</span>
+        </div>
+    </div>
+
+    <section id="projects" class="relative z-10 py-24 px-6 max-w-5xl mx-auto">
+        <h2 class="text-3xl font-bold text-white mb-12">Selected Engineering Portfolio</h2>
         
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          
-          {/* PROJECT 1: FRACTURE TRAINER (Large) */}
-          <motion.div 
-            whileHover={{ y: -5 }}
-            className="md:col-span-2 bg-slate-900 border border-white/10 rounded-2xl overflow-hidden group"
-          >
-            <div className="h-48 bg-gradient-to-br from-blue-900/40 to-slate-900 relative overflow-hidden">
-               {/* PLACEHOLDER FOR IMAGE - You can add an <img /> tag here later */}
-               <div className="absolute inset-0 flex items-center justify-center text-blue-500/20 text-6xl font-bold">BIO-ROBOTICS</div>
-            </div>
-            <div className="p-8">
-              <h3 className="text-2xl font-bold text-white mb-2 group-hover:text-blue-400 transition-colors">Fracture Immobilisation Trainer</h3>
-              <p className="text-slate-400 mb-4">
-                A haptic-enabled robotic arm capable of simulating physiological responses like pulsatile blood flow and inflammation. 
-                Built to train medical staff, integrating Hall effect sensors and a dual-microcontroller architecture (ESP32/Pi).
-              </p>
-              <div className="flex gap-2 flex-wrap">
-                <Badge text="Haptics" />
-                <Badge text="Sensor Fusion" />
-                <Badge text="Medical Robotics" />
-              </div>
-            </div>
-          </motion.div>
-
-          {/* PROJECT 2: BOXTURTLE */}
-          <motion.div 
-            whileHover={{ y: -5 }}
-            className="bg-slate-900 border border-white/10 rounded-2xl overflow-hidden group"
-          >
-             <div className="h-48 bg-slate-800/50 flex items-center justify-center">
-                <Cpu size={48} className="text-blue-500/40" />
-             </div>
-            <div className="p-6">
-              <h3 className="text-xl font-bold text-white mb-2 group-hover:text-blue-400">BoxTurtle Filament Changer</h3>
-              <p className="text-slate-400 text-sm mb-4">
-                Designed a complex multi-material switching mechanism for 3D printers using Carbon-Fibre ASA & TPU.
-              </p>
-              <div className="flex gap-2 flex-wrap">
-                <Badge text="Mechanism Design" />
-                <Badge text="Materials" />
-              </div>
-            </div>
-          </motion.div>
-
-          {/* PROJECT 3: GYRO GIMBAL */}
-          <motion.div 
-            whileHover={{ y: -5 }}
-            className="bg-slate-900 border border-white/10 rounded-2xl overflow-hidden group"
-          >
-             <div className="h-48 bg-slate-800/50 flex items-center justify-center">
-                <Terminal size={48} className="text-blue-500/40" />
-             </div>
-            <div className="p-6">
-              <h3 className="text-xl font-bold text-white mb-2 group-hover:text-blue-400">Active Gyro Gimbal</h3>
-              <p className="text-slate-400 text-sm mb-4">
-                2-axis camera stabiliser built from scratch. Wrote custom C++ firmware for real-time PID control loops.
-              </p>
-              <div className="flex gap-2 flex-wrap">
-                <Badge text="C++" />
-                <Badge text="Control Theory" />
-              </div>
-            </div>
-          </motion.div>
-
-           {/* PROJECT 4: FORMULA STUDENT */}
-           <motion.div 
-            whileHover={{ y: -5 }}
-            className="md:col-span-2 bg-slate-900 border border-white/10 rounded-2xl overflow-hidden group"
-          >
-            <div className="p-8 flex flex-col md:flex-row gap-6 items-start">
-              <div className="flex-1">
-                <h3 className="text-2xl font-bold text-white mb-2 group-hover:text-blue-400">Formula Student Optimization</h3>
-                <p className="text-slate-400 mb-4">
-                  Optimised suspension geometry for the university racing team. Treated mechanical design as a high-dimensional optimisation problem to improve camber gain and roll centre stability.
-                </p>
-                <div className="flex gap-2 flex-wrap">
-                  <Badge text="Simulation" />
-                  <Badge text="Ansys" />
-                  <Badge text="Vehicle Dynamics" />
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            
+            <div class="md:col-span-2 bg-slate-900 border border-white/10 rounded-2xl overflow-hidden hover:-translate-y-1 transition-transform duration-300 group">
+                <div class="h-48 bg-gradient-to-br from-blue-900/40 to-slate-900 relative overflow-hidden flex items-center justify-center border-b border-white/5">
+                    <span class="text-blue-500/20 text-4xl font-bold tracking-widest">BIO-ROBOTICS</span>
                 </div>
-              </div>
+                <div class="p-8">
+                    <h3 class="text-2xl font-bold text-white mb-2 group-hover:text-blue-400 transition-colors">Fracture Immobilisation Trainer</h3>
+                    <p class="text-slate-400 mb-4">
+                        A haptic-enabled robotic arm capable of simulating physiological responses like pulsatile blood flow and inflammation. 
+                        Built to train medical staff, integrating Hall effect sensors and a dual-microcontroller architecture (ESP32/Pi).
+                    </p>
+                    <div class="flex gap-2 flex-wrap">
+                        <span class="px-3 py-1 bg-blue-500/10 border border-blue-500/20 text-blue-300 text-xs font-mono rounded-full">Haptics</span>
+                        <span class="px-3 py-1 bg-blue-500/10 border border-blue-500/20 text-blue-300 text-xs font-mono rounded-full">Sensor Fusion</span>
+                        <span class="px-3 py-1 bg-blue-500/10 border border-blue-500/20 text-blue-300 text-xs font-mono rounded-full">Medical Robotics</span>
+                    </div>
+                </div>
             </div>
-          </motion.div>
+
+            <div class="bg-slate-900 border border-white/10 rounded-2xl overflow-hidden hover:-translate-y-1 transition-transform duration-300 group">
+                <div class="h-48 bg-slate-800/50 flex items-center justify-center border-b border-white/5">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-blue-500/40" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z" /></svg>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-white mb-2 group-hover:text-blue-400 transition-colors">BoxTurtle Filament Changer</h3>
+                    <p class="text-slate-400 text-sm mb-4">
+                        Designed a complex multi-material switching mechanism for 3D printers using Carbon-Fibre ASA & TPU.
+                    </p>
+                    <div class="flex gap-2 flex-wrap">
+                        <span class="px-3 py-1 bg-blue-500/10 border border-blue-500/20 text-blue-300 text-xs font-mono rounded-full">Mechanism Design</span>
+                        <span class="px-3 py-1 bg-blue-500/10 border border-blue-500/20 text-blue-300 text-xs font-mono rounded-full">Materials</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-slate-900 border border-white/10 rounded-2xl overflow-hidden hover:-translate-y-1 transition-transform duration-300 group">
+                <div class="h-48 bg-slate-800/50 flex items-center justify-center border-b border-white/5">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-blue-500/40" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" /></svg>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-white mb-2 group-hover:text-blue-400 transition-colors">Active Gyro Gimbal</h3>
+                    <p class="text-slate-400 text-sm mb-4">
+                        2-axis camera stabiliser built from scratch. Wrote custom C++ firmware for real-time PID control loops.
+                    </p>
+                    <div class="flex gap-2 flex-wrap">
+                        <span class="px-3 py-1 bg-blue-500/10 border border-blue-500/20 text-blue-300 text-xs font-mono rounded-full">C++</span>
+                        <span class="px-3 py-1 bg-blue-500/10 border border-blue-500/20 text-blue-300 text-xs font-mono rounded-full">Control Theory</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="md:col-span-2 bg-slate-900 border border-white/10 rounded-2xl overflow-hidden hover:-translate-y-1 transition-transform duration-300 group">
+                <div class="p-8 flex flex-col md:flex-row gap-6 items-start">
+                    <div class="flex-1">
+                        <h3 class="text-2xl font-bold text-white mb-2 group-hover:text-blue-400 transition-colors">Formula Student Optimization</h3>
+                        <p class="text-slate-400 mb-4">
+                            Optimised suspension geometry for the university racing team. Treated mechanical design as a high-dimensional optimisation problem to improve camber gain and roll centre stability.
+                        </p>
+                        <div class="flex gap-2 flex-wrap">
+                            <span class="px-3 py-1 bg-blue-500/10 border border-blue-500/20 text-blue-300 text-xs font-mono rounded-full">Simulation</span>
+                            <span class="px-3 py-1 bg-blue-500/10 border border-blue-500/20 text-blue-300 text-xs font-mono rounded-full">Ansys</span>
+                            <span class="px-3 py-1 bg-blue-500/10 border border-blue-500/20 text-blue-300 text-xs font-mono rounded-full">Vehicle Dynamics</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
         </div>
-      </section>
+    </section>
 
-      {/* EXPERIENCE SECTION */}
-      <section id="experience" className="py-20 px-6 max-w-5xl mx-auto border-t border-white/10">
-        <h2 className="text-3xl font-bold text-white mb-12">Experience</h2>
+    <section id="experience" class="relative z-10 py-20 px-6 max-w-5xl mx-auto border-t border-white/10">
+        <h2 class="text-3xl font-bold text-white mb-12">Experience</h2>
         
-        <div className="space-y-12">
-          <ExperienceItem 
-            role="R&D Engineering Intern"
-            company="Alvis Robotics"
-            date="Aug 2024"
-            desc="Engaged in R&D for EOD (Explosive Ordnance Disposal) systems. Debugged embedded firmware and analysed mechanical failure points in mission-critical hardware."
-          />
-          <ExperienceItem 
-            role="Quantitative Analyst Intern"
-            company="HSBC"
-            date="July 2024 - Aug 2024"
-            desc="Applied analytical engineering skills to interpret complex financial datasets. Developed models to inform investment banking decision-making."
-          />
+        <div class="space-y-12">
+            <div class="flex flex-col md:flex-row gap-4 md:gap-12 group">
+                <div class="md:w-1/4">
+                    <div class="text-slate-500 font-mono text-sm mb-1 group-hover:text-blue-400 transition-colors">Aug 2024</div>
+                    <div class="text-white font-semibold">Alvis Robotics</div>
+                </div>
+                <div class="md:w-3/4">
+                    <h3 class="text-xl font-bold text-white mb-2">R&D Engineering Intern</h3>
+                    <p class="text-slate-400 leading-relaxed">
+                        Engaged in R&D for EOD (Explosive Ordnance Disposal) systems. Debugged embedded firmware and analysed mechanical failure points in mission-critical hardware.
+                    </p>
+                </div>
+            </div>
+
+            <div class="flex flex-col md:flex-row gap-4 md:gap-12 group">
+                <div class="md:w-1/4">
+                    <div class="text-slate-500 font-mono text-sm mb-1 group-hover:text-blue-400 transition-colors">July 2024 - Aug 2024</div>
+                    <div class="text-white font-semibold">HSBC</div>
+                </div>
+                <div class="md:w-3/4">
+                    <h3 class="text-xl font-bold text-white mb-2">Quantitative Analyst Intern</h3>
+                    <p class="text-slate-400 leading-relaxed">
+                        Applied analytical engineering skills to interpret complex financial datasets. Developed models to inform investment banking decision-making.
+                    </p>
+                </div>
+            </div>
         </div>
-      </section>
+    </section>
 
-      {/* FOOTER */}
-      <footer id="contact" className="py-20 bg-slate-900 border-t border-white/10">
-        <div className="max-w-5xl mx-auto px-6 text-center">
-          <h2 className="text-3xl font-bold text-white mb-6">Let's Build Something.</h2>
-          <p className="text-slate-400 mb-8 max-w-lg mx-auto">
-            I am currently applying for MSc programmes in AI and Robotics. 
-            Feel free to reach out regarding research or engineering opportunities.
-          </p>
-          <div className="flex justify-center gap-6">
-            <a href="mailto:hishaamabbasi@gmail.com" className="flex items-center gap-2 text-white hover:text-blue-400 transition-colors">
-              <Mail size={20} /> hishaamabbasi@gmail.com
-            </a>
-            <a href="https://linkedin.com/in/hishaam-ali-abbasi" className="flex items-center gap-2 text-white hover:text-blue-400 transition-colors">
-              <Linkedin size={20} /> LinkedIn
-            </a>
-          </div>
-          <p className="mt-12 text-slate-600 text-sm">© 2026 Hishaam Ali Abbasi. Built with Next.js & Tailwind.</p>
+    <footer id="contact" class="relative z-10 py-20 bg-slate-900 border-t border-white/10 mt-12">
+        <div class="max-w-5xl mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold text-white mb-6">Let's Build Something.</h2>
+            <p class="text-slate-400 mb-8 max-w-lg mx-auto">
+                I am currently applying for MSc programmes in AI and Robotics. 
+                Feel free to reach out regarding research or engineering opportunities.
+            </p>
+            <div class="flex justify-center gap-6">
+                <a href="mailto:hishaamabbasi@gmail.com" class="flex items-center gap-2 text-white hover:text-blue-400 transition-colors">
+                    <span>@</span> hishaamabbasi@gmail.com
+                </a>
+                <a href="https://linkedin.com/in/hishaam-ali-abbasi" class="flex items-center gap-2 text-white hover:text-blue-400 transition-colors">
+                    <span>in</span> LinkedIn
+                </a>
+            </div>
+            <p class="mt-12 text-slate-600 text-sm">© 2026 Hishaam Ali Abbasi. Built with Next.js & Tailwind.</p>
         </div>
-      </footer>
+    </footer>
 
-    </div>
-  );
-}
-
-// HELPER COMPONENTS
-function Badge({ text }: { text: string }) {
-  return (
-    <span className="px-3 py-1 bg-blue-500/10 border border-blue-500/20 text-blue-300 text-xs font-mono rounded-full">
-      {text}
-    </span>
-  );
-}
-
-function ExperienceItem({ role, company, date, desc }: { role: string, company: string, date: string, desc: string }) {
-  return (
-    <div className="flex flex-col md:flex-row gap-4 md:gap-12">
-      <div className="md:w-1/4">
-        <div className="text-slate-500 font-mono text-sm mb-1">{date}</div>
-        <div className="text-white font-semibold">{company}</div>
-      </div>
-      <div className="md:w-3/4">
-        <h3 className="text-xl font-bold text-white mb-2">{role}</h3>
-        <p className="text-slate-400 leading-relaxed">{desc}</p>
-      </div>
-    </div>
-  );
-}
+</body>
+</html>
